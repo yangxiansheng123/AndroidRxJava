@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Library</string>
+    <string name="base_loading">"加载数据中..."</string>
+</resources>

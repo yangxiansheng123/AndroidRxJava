@@ -1,0 +1,22 @@
+ext{
+    // false: 模块化
+    // true ：集成模式
+    isModule = true
+    andcode= [
+            compileSdkVersion: 26,
+            buildToolsVersion: "26.0.2",
+            minSdkVersion    : 15,
+            targetSdkVersion : 21,
+            versionCode      : 1,
+            versionName      : "1.0"
+    ]
+//配置各个模块的包名
+    appId = ["app"    : "com.androidframework",
+             "institution": "com.example.administrator.modeltest"]
+
+    dependencies = [
+            "appcompat-v7"     : "com.android.support:appcompat-v7:24.0.1",
+            "support-v4"     : "com.android.support:support-v4:25.4.0",
+            "recyclerview-v7"     : "com.android.support:recyclerview-v7:24.2.1",
+    ]
+}

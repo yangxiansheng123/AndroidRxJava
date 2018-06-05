@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".ui.MainActivity">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#fff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <FrameLayout
+            android:id="@+id/fl"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/nihao">
+
+        </FrameLayout>
+
+
+        <View
+            android:id="@+id/nihao"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_above="@+id/rg"
+            android:background="@color/stroke_line"
+            android:layout_marginBottom="5dp"/>
+
+        <RadioGroup
+            android:id="@+id/rg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="#fff"
+            android:orientation="horizontal"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp">
+
+            <RadioButton
+                android:id="@+id/rd_home_page"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:button="@null"
+                android:checked="true"
+                android:drawableTop="@drawable/homepage_selector"
+                android:textColor="@drawable/index_textcolor_selecter"
+                android:gravity="center"
+                android:text="XX"
+                android:textSize="@dimen/text_size_14"
+                android:drawablePadding="3dp"/>
+
+            <RadioButton
+                android:id="@+id/rd_art_forum"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:button="@null"
+                android:drawableTop="@drawable/artforum_seclector"
+                android:textColor="@drawable/index_textcolor_selecter"
+                android:gravity="center"
+                android:text="XX"
+                android:textSize="@dimen/text_size_14"
+                android:drawablePadding="3dp"/>
+
+            <RadioButton
+                android:id="@+id/rd_nearby_institution"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:button="@null"
+                android:drawableTop="@drawable/nearby_institutions_selector"
+                android:textColor="@drawable/index_textcolor_selecter"
+                android:gravity="center"
+                android:text="XX"
+                android:textSize="@dimen/text_size_14"
+                android:drawablePadding="3dp"/>
+
+            <RadioButton
+                android:id="@+id/rd_me"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="#fff"
+                android:button="@null"
+                android:drawableTop="@drawable/me_selector"
+                android:textColor="@drawable/index_textcolor_selecter"
+                android:gravity="center"
+                android:text="XX"
+                android:textSize="@dimen/text_size_14"
+                android:drawablePadding="3dp" />
+        </RadioGroup>
+
+        <!--<RelativeLayout-->
+        <!--android:id="@+id/main_bottom"-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:layout_alignParentBottom="true"-->
+        <!--android:background="#000" />-->
+    </RelativeLayout>
+</RelativeLayout>
